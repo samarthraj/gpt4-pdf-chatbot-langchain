@@ -41,6 +41,9 @@ export const run = async () => {
     });
   } catch (error) {
     console.log('error', error);
+    // log more details about the error
+    console.log('error in detail....');
+    console.log(JSON.stringify(error, null, 2));
     throw new Error('Failed to ingest your data');
   }
 };
