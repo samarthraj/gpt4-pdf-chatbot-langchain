@@ -165,7 +165,7 @@ export default function Home() {
                         : styles.usermessage;
                   }
                   return (
-                    <>
+                    <div key={`chatMessage-${index}`}>
                       <div key={`chatMessage-${index}`} className={className}>
                         {icon}
                         <div className={styles.markdownanswer}>
@@ -204,7 +204,7 @@ export default function Home() {
                           </Accordion>
                         </div>
                       )}
-                    </>
+                    </div>
                   );
                 })}
               </div>
